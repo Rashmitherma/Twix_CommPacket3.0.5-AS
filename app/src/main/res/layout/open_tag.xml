@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/dummy_focus"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:orientation="horizontal"/>
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TableLayout
+			android:id="@+id/TagTable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="3px"
+			android:background="#ff9999cc"
+			android:cacheColorHint="#ff9999cc"
+			android:layout_weight="1">
+			<TableRow>
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="wrap_content"
+					android:text="Site: "
+					android:layout_marginLeft="2px"
+					style="@style/header"
+					android:layout_weight="0"/>
+				<TextView
+					android:id="@+id/Text_SiteName"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					style="@style/header_value"/>
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="wrap_content"
+					android:text="Tenant: "
+					android:layout_marginLeft="2px"
+					style="@style/header"
+					android:layout_weight="0"/>
+				<TextView
+					android:id="@+id/Text_Tenant"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					style="@style/header_value"
+					android:layout_weight="0.5"/>
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="wrap_content"
+					android:text="Service Type: "
+					android:layout_marginLeft="2px"
+					style="@style/header"
+					android:layout_weight="0"/>
+				<TextView
+					android:id="@+id/Text_ServiceType"
+					android:layout_height="fill_parent"
+					android:layout_width="wrap_content"
+					android:layout_marginRight="2px"
+					style="@style/header_value"
+					android:layout_weight="0"/>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Batch No: "
+					android:layout_marginLeft="25px"
+					style="@style/sub1"/>
+				<TextView
+					android:id="@+id/Text_BatchNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="15px"
+					style="@style/sub1_value"/>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Job No: "
+					android:layout_marginLeft="15px"
+					style="@style/sub1"/>
+				<TextView
+					android:id="@+id/Text_JobNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="25px"
+					style="@style/sub1_value"/>
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Disposition: "
+					android:layout_marginLeft="25px"
+					style="@style/sub1"/>
+				<RelativeLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:layout_marginRight="15px">
+					<Spinner
+						android:id="@+id/Text_Disposition"
+						android:layout_height="32dp"
+						android:layout_width="fill_parent"
+						style="@style/header_edit"/>
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:src="@drawable/drop_arrow"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:layout_margin="5px"/>
+				</RelativeLayout>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Tag Status: "
+					android:layout_marginLeft="15px"
+					style="@style/sub1"/>
+				<TextView
+					android:id="@+id/Text_Completed"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="25px"
+					style="@style/sub1_value"/>
+				
+			
+			</TableRow>
+			
+			
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Description: "
+					android:layout_marginLeft="25px"
+					style="@style/sub1"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/Text_Description"
+					android:layout_height="55dp"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="25px"
+					android:lines="2"
+					style="@style/sub1_value"
+					android:layout_weight="4.5"/>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text=" "
+					android:layout_marginLeft="25px"
+					style="@style/sub1"
+					android:layout_weight="1" />
+			</TableRow>
+			<TableRow>
+					<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Address"
+					android:layout_marginLeft="25px"
+					style="@style/sub1"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/Text_Address"
+					android:layout_height="55dp"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="25px"
+					android:lines="2"
+					style="@style/sub1_value"
+					android:layout_weight="4.5"/>
+
+				
+
+				
+			</TableRow>
+			
+
+		</TableLayout>
+
+		<LinearLayout
+			android:id="@+id/TagButtons"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:padding="3px"
+			android:layout_margin="3px"
+			android:background="#ff9999cc"
+			android:cacheColorHint="#ff9999cc">
+			<Button
+				android:id="@+id/LinkDispatch"
+				android:layout_width="190dp"
+				android:layout_height="40dp"
+				android:text="Link Dispatch"
+				style="@style/button_small"
+				android:layout_weight="0"
+				android:layout_margin="3px" />
+
+			<Button
+				android:id="@+id/LinkServiceAddress"
+				android:layout_width="190dp"
+				android:layout_height="40dp"
+				android:text="Link Site"
+				style="@style/button_small"
+				android:layout_weight="0"
+				android:layout_margin="3px" />
+
+			<Button
+				android:id="@+id/LinkManual"
+				android:layout_width="190dp"
+				android:layout_height="40dp"
+				android:text="Manual Enter"
+				style="@style/button_small"
+				android:layout_weight="0"
+				android:layout_margin="3px" />
+			<Button
+				android:id="@+id/Xoi"
+				android:layout_width="190dp"
+				android:layout_height="40dp"
+				android:text="Xoi"
+				style="@style/button_small"
+				android:layout_weight="0"
+				android:layout_margin="3px" />
+			
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		style="@style/table"
+		android:layout_marginTop="3px">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Service Units"
+			android:layout_margin="5px"
+			style="@style/sub1"/>
+		<LinearLayout
+			android:id="@+id/AddServiceUnit"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent">
+			<ImageButton
+			    android:id="@+id/AddServiceUnitButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10px"
+				android:background="#00000000"
+				android:src="@drawable/plus"
+				android:onClick="addServiceUnit"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Add Service Unit"
+				style="@style/sub1"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="0"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="3px"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/SectionBuild"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			style="@style/table">
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

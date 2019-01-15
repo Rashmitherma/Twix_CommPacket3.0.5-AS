@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    
+    <LinearLayout
+		android:id="@+id/dummy_focus"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="0px"
+	    android:layout_height="0px"
+	    android:orientation="horizontal" />
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	style="@style/header"
+    	android:layout_weight="0" >
+    	<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Receipts For: "
+	    	style="@style/header_Xlarge"
+	    	android:layout_weight="0"
+	    	android:padding="5px" />
+	    <TextView 
+	    	android:id="@+id/TagInfo"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	style="@style/header_Xlarge"
+	    	android:layout_weight="1"
+	    	android:padding="5px" />
+	    <LinearLayout
+	    	android:id="@+id/TakeReceipt"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="44dp"
+	    	android:orientation="horizontal" >
+	    	<ImageButton
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:padding="10px"
+		   		android:src="@drawable/icon_camera"
+		   		android:background="@drawable/button_bg"
+		   		android:onClick="takeReceipt"
+		   		android:layout_gravity="center_vertical" />
+		   	<TextView 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="match_parent"
+		    	android:text="Take Receipt Photo"
+		    	style="@style/sub1"
+		    	android:layout_weight="1"
+		    	android:padding="5px"
+		    	android:layout_margin="2px" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView
+    	android:id="@+id/ScrollView01"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:layout_weight="1" >
+	    <LinearLayout
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:layout_gravity="center_horizontal"
+	    	android:orientation="vertical"
+	    	android:id="@+id/PhotoTableHost"
+	    	android:layout_margin="4px"
+	    	android:focusable="true" 
+        	android:focusableInTouchMode="true" >
+	    </LinearLayout>
+    </ScrollView>
+    
+    
+</LinearLayout>

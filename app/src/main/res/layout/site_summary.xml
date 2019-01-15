@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sidebar_bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="3px"
+		style="@style/header"
+		android:layout_weight="0" >
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sites\nLoaded"
+			style="@style/back_button"
+			android:layout_marginRight="20dp" />
+		<TextView
+			android:id="@+id/site_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" "
+			android:layout_margin="3px"
+			style="@style/header_tab"
+			android:padding="5px" />
+		<Button
+			android:id="@+id/CreateOpenTag"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:text="Create Tag"
+			style="@style/button_small"
+			android:layout_weight="0" />
+	</LinearLayout>
+    
+	<TableLayout
+		android:id="@+id/main"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="3dp"
+	    style="@style/table" >
+	    
+	    <TableRow>
+		    <TextView
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:text="Address:"
+				android:layout_margin="5dp"
+				style="@style/sub1_large3"
+				android:gravity="right|top">
+			</TextView>
+			<TextView
+				android:id="@+id/address1"
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:text=""
+				android:layout_margin="5dp"
+				style="@style/sub1_large3">
+			</TextView>
+			<TextView
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:text="BuildingNo:"
+				android:layout_margin="5dp"
+				style="@style/sub1_large3"
+				android:gravity="right|top" >
+			</TextView>
+			<TextView
+				android:id="@+id/buildingNo"
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:text=""
+				android:layout_margin="5dp"
+				style="@style/sub1_large3"
+				android:gravity="top|left" >
+			</TextView>
+	    </TableRow>
+	    <TableRow>
+		    <LinearLayout
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_margin="5dp"
+				android:layout_weight="1" >
+			</LinearLayout>
+			<TextView
+				android:id="@+id/address2"
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:text=""
+				android:layout_margin="5dp"
+				style="@style/sub1_large3" >
+			</TextView>
+			<LinearLayout
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_margin="5dp"
+				android:layout_weight="1" >
+			</LinearLayout>
+			<LinearLayout
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_margin="5dp"
+				android:layout_weight="1" >
+			</LinearLayout>
+	    </TableRow>
+	    <TableRow>
+	    	<TextView
+				android:layout_height="fill_parent"
+				android:text="Notes:"
+				
+				
+				style="@style/sub1_large3" >
+			</TextView>
+	    </TableRow>
+	    <TableRow>
+			<TextView
+				android:id="@+id/notes"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:text=""
+				
+				style="@style/sub1_large2" >
+			</TextView>
+	    </TableRow>
+	    
+	    
+	   <TableRow>
+	       <LinearLayout
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_margin="5dp"
+				android:layout_weight="1" >
+			</LinearLayout>
+	       <ScrollView android:layout_height="80dp"
+       	 android:layout_width="900dp">
+	        <EditText
+			android:id="@+id/note2"
+			android:layout_width="900dp"
+			android:layout_height="wrap_content"
+			android:hint="Additional Notes"
+			android:gravity="top|left"
+			android:lines="2"
+			android:maxLength="5000"
+			style="@style/sub1_edit"
+			android:inputType="textMultiLine"
+			android:layout_weight="6"/>
+	       </ScrollView>  
+	        <Button
+	    android:id="@+id/Save"
+	    style="@style/button_small"
+	   	android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:text="Save"
+	
+		
+		/>
+	       </TableRow>
+	     
+	    
+	</TableLayout>
+	<TableLayout
+		android:id="@id/main"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="3dp"
+	    style="@style/table" >
+	    
+	   
+	   
+		</TableLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="right" >
+	
+		</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/TenantList"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/table"
+	    android:layout_margin="3dp"
+	    android:orientation="vertical"
+	    android:layout_gravity="bottom|center_horizontal" >
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/table"
+	    android:layout_margin="3dp"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:layout_gravity="bottom|center_horizontal" >
+	    <LinearLayout
+	    	android:id="@+id/gotoHistory"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/button"
+		    android:layout_weight="0"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp"
+		    android:orientation="vertical"
+		    android:onClick="gotoSite" >
+		    <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/icon_history"/>
+			<TextView
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Site History"
+			    style="@style/sub1" />"
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:id="@+id/gotoContacts"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/button"
+		    android:layout_weight="0"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp"
+		    android:orientation="vertical"
+		    android:onClick="gotoSite" >
+		    <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/icon_contacts"/>
+			<TextView
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Site Contacts"
+			    style="@style/sub1" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	    	android:id="@+id/gotoEquipment"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/button"
+		    android:layout_weight="0"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp"
+		    android:orientation="vertical"
+		    android:onClick="gotoSite" >
+		    <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/icon_equipment"/>
+			<TextView
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Site Equipment"
+			    style="@style/sub1" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/NavigateMaps"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    style="@style/button"
+		    android:layout_weight="0"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp"
+		    android:orientation="vertical" >
+			 <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/icon_navigation"/>
+	        <TextView
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Map"
+			    style="@style/sub1" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

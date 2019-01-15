@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:minWidth="1200dp"
+	style="@style/table" >
+	
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="Please Sign Here:"
+		style="@style/header_Xlarge"
+		android:layout_weight="0" />
+	
+	<LinearLayout 
+	   	android:id="@+id/SignatureHolder"
+		android:layout_width="1000dp"
+	   	android:layout_height="300dp"
+	   	android:orientation="horizontal"
+	   	android:layout_gravity="center_horizontal"
+	   	android:layout_margin="5px" >
+	</LinearLayout>
+	    
+	<LinearLayout 
+		android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:orientation="horizontal"
+	   	android:layout_gravity="center_horizontal" >
+	   	<Button 
+	    	android:id="@+id/Save"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Save Signature"
+	    	style="@style/button"
+	    	android:layout_margin="5px" />
+	    <Button 
+	    	android:id="@+id/ClearSig"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Clear Signature"
+	    	style="@style/button"
+	    	android:layout_margin="5px" />
+	    <Button 
+	    	android:id="@+id/Cancel"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Cancel Changes"
+	    	style="@style/button"
+	    	android:layout_margin="5px" />
+	</LinearLayout>   
+
+
+</LinearLayout>

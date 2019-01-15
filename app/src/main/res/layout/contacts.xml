@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+		android:id="@+id/dummy_focus"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="0px"
+	    android:orientation="horizontal"
+	    android:layout_height="0px" />
+	    
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		style="@style/header"
+		android:layout_weight="0" >
+		
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Site\nSummary"
+			style="@style/back_button"
+			android:layout_marginRight="20dp" />
+		
+		<TextView
+			android:id="@+id/titleHeader"
+			android:text="Contacts for "
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        style="@style/header_Xlarge"
+	        android:layout_weight="0" />
+	    <TextView
+			android:id="@+id/title"
+			android:text=" "
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        style="@style/header_Xlarge" />
+	    <LinearLayout
+	    	android:id="@+id/AddContactHolder"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+		    <ImageButton
+		        android:id="@+id/AddContact"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10px"
+				android:src="@drawable/plus"
+				android:background="#00000000"
+				android:layout_gravity="center_vertical" />
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Add Contact"
+			  	style="@style/sub1"
+			   	android:layout_weight="1"
+			   	android:padding="5px"
+			   	android:layout_margin="2px" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+	
+    <ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:id="@+id/ContactsBuild"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

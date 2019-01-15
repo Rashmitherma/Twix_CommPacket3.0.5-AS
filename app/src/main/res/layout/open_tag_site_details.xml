@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Service Address Information" />
+
+    <TableLayout
+        android:id="@+id/TagTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3px"
+        android:layout_weight="0"
+        android:background="#ff9999cc"
+        android:cacheColorHint="#ff9999cc" >
+
+        <TableRow >
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="Site Name: " />
+
+            <TextView
+                android:id="@+id/Text_SiteName"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5px"
+                android:layout_weight="5"
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/Title_Tenant"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="Tenant: "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Text_Tenant"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="35px"
+                android:layout_weight="2"
+                android:text=""
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="Address 1: " />
+
+            <TextView
+                android:id="@+id/Text_Address1"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15px"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="City: " />
+
+            <TextView
+                android:id="@+id/Text_City"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="25px"
+                android:layout_weight="2" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="Address 2: " />
+
+            <TextView
+                android:id="@+id/Text_Address2"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15px"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="State: " />
+
+            <TextView
+                android:id="@+id/Text_State"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="25px"
+                android:layout_weight="2" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="Building No: " />
+
+            <TextView
+                android:id="@+id/Text_BuildingNo"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15px"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="ZIP: " />
+
+            <TextView
+                android:id="@+id/Text_Zip"
+                style="@style/sub1_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="25px"
+                android:layout_weight="2" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/AltBillingHeader"
+            style="@style/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Billing Information" />
+
+        <LinearLayout
+            android:id="@+id/AltBillingTable"
+            style="@style/table_light"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3px"
+            android:layout_marginRight="3px"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/AltBilling"
+                style="@style/button"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_margin="3px"
+                android:layout_weight="0"
+                android:src="@drawable/icon_edit" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:paddingLeft="5px"
+                    android:paddingRight="5px" >
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Name: " />
+
+                    <TextView
+                        android:id="@+id/AltName"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Attention: " />
+
+                    <TextView
+                        android:id="@+id/AltAttn"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="5px"
+                    android:paddingRight="5px" >
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Address 1: " />
+
+                    <TextView
+                        android:id="@+id/AltAddress1"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Address 2: " />
+
+                    <TextView
+                        android:id="@+id/AltAddress2"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="5px"
+                    android:paddingRight="5px" >
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Address 3: " />
+
+                    <TextView
+                        android:id="@+id/AltAddress3"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/sub1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Address 4: " />
+
+                    <TextView
+                        android:id="@+id/AltAddress4"
+                        style="@style/sub1_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

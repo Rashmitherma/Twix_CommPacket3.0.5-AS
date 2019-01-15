@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:id="@+id/dummy_focus"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:orientation="horizontal"
+		android:layout_width="0px"
+		
+		android:layout_height="0px"/>
+	
+	<ScrollView
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:id="@+id/WorkFlowTable"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="2px"
+			android:background="#ff9999cc"
+			android:cacheColorHint="#ff9999cc"
+			android:orientation="vertical"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+				<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Refrigerant Used for Unit : "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				 <TextView 
+	    			android:id="@+id/UnitInfo"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			style="@style/header_l1"
+	    			android:layout_weight=".1"
+	    			android:padding="5dp" />
+				</LinearLayout>
+			
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+			</TableRow>
+		</TableLayout>
+		
+		<LinearLayout
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent" >
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Transfer Date: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				
+				<LinearLayout
+				    android:layout_height="fill_parent"
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px" >
+					<TextView
+						android:id="@+id/Text_DateInService"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						style="@style/sub1_edit"/>
+					
+				</LinearLayout>
+				
+				
+
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="TechName: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<RelativeLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:layout_weight="1">
+					
+					
+					<EditText
+					android:id="@+id/Text_Tech"
+					android:enabled="false"
+					android:visibility="gone"
+					android:layout_height="fill_parent"
+					android:layout_width="fill_parent"
+					style="@style/header_edit2"/>
+					
+					<Button
+					    android:id="@+id/e"
+					    style="@style/header_edit_noweight"
+					    android:layout_width="700dp"
+					    android:layout_height="fill_parent"
+					    android:layout_toLeftOf="@+id/Text_TechName"
+					    android:paddingRight="25dp" />
+					<Spinner
+						android:id="@+id/Text_TechName"
+						android:layout_height="fill_parent"
+						android:layout_alignParentRight="true"
+						android:layout_width="5dp"
+						style="@style/header_edit2"/>
+					
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5px"
+						android:src="@drawable/drop_arrow"/>
+				</RelativeLayout>
+			</LinearLayout>
+		    <TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+			</TableRow>
+			</TableLayout>
+			
+			<LinearLayout
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Refrigerant Type: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				
+
+				
+				
+				<RelativeLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:layout_weight="1">
+					
+					
+					<EditText
+					android:id="@+id/tref"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:inputType="textCapWords"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+					
+					<Button
+					    android:id="@+id/bref"
+					    style="@style/header_edit_noweight"
+					    android:layout_width="700dp"
+					    android:layout_height="fill_parent"
+					    android:layout_toLeftOf="@+id/sref"
+					    android:paddingRight="25dp" />
+					<Spinner
+						android:id="@+id/sref"
+						android:layout_height="fill_parent"
+						android:layout_alignParentRight="true"
+						android:layout_width="5dp"
+						style="@style/header_edit2"/>
+					
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5px"
+						android:src="@drawable/drop_arrow"/>
+				</RelativeLayout>
+				
+			
+				<TextView
+					android:id="@+id/Title_Amount"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Amount in lb: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_Amount"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:inputType="phone"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:hint="0.0"
+					style="@style/sub1_edit"/>
+			</LinearLayout>
+			<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+			</TableRow>
+			</TableLayout>
+			<LinearLayout
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:id="@+id/Title_Model"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Model: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_Model"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+				
+
+				<TextView
+					android:id="@+id/Title_Cylinder"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Cylinder Name: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_Cylinder"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+				
+			</LinearLayout>
+			
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+			</TableRow>
+			</TableLayout>
+	
+			<LinearLayout
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:id="@+id/Title_SerialNo"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="SerialNo: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+
+				<EditText
+					android:id="@+id/Text_SerialNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+
+				<TextView
+					android:id="@+id/Title_TransferedTo"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Transfered To: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_TransferedTo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+			</LinearLayout>
+			<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+					</TableRow>
+					</TableLayout>
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				
+
+				<TextView
+					android:id="@+id/Title_CylinderSerial"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Cylinder Serial No: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_CylinderSerial"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+				<TextView
+					android:id="@id/Title_CylinderSerial"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text=" "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				<TextView
+					android:id="@id/Title_CylinderSerial"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text=" "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+			</LinearLayout>
+			
+
+			<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+			</TableRow>
+			</TableLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+
+			    
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" >
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

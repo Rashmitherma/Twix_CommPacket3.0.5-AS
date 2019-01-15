@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp" >
+
+            <TextView
+                style="@style/sub1_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Login: " />
+
+            <TextView
+                android:id="@+id/LoginName"
+                style="@style/sub1_value_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp" >
+
+            <TextView
+                style="@style/sub1_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Last Sync: " />
+
+            <TextView
+                android:id="@+id/LoginDate"
+                style="@style/sub1_value_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/sub1_value_large"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:text="For next Sync:" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            style="@style/table" >
+
+            <LinearLayout
+                android:id="@+id/SyncBuild"
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		
+		<TextView
+			style="@style/header_large"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0"
+			android:text="Actions"
+			android:textStyle="bold"
+			android:gravity="center_horizontal"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp" />
+        
+        <LinearLayout
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:onClick="updateSync"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sync_selector" />
+
+            <TextView
+                style="@style/sub1_Xlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-6dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-5dp"
+                android:padding="0dp"
+                android:text="Sync\nNow" />
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:onClick="changeUser"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_user" />
+
+            <TextView
+                style="@style/sub1_Xlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-5dp"
+                android:padding="0dp"
+                android:text="Switch\nUser" />
+        </LinearLayout>
+	
+        <Button
+            android:id="@+id/DebugButton"
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:onClick="debug"
+            android:text="Debug ON"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/AboutButton"
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="about"
+            android:text="About" />
+
+        <LinearLayout
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:onClick="closeApp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/exit" />
+
+            <TextView
+                style="@style/sub1_Xlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="0dp"
+                android:text="Exit" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <CheckBox
+                android:id="@+id/ReInit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="0dp"
+                android:text="Re-Initialize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

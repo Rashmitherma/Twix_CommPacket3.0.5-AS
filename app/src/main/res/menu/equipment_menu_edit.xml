@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/save_changes"
+          android:icon="@drawable/icon_save"
+          android:title="Save Changes" />
+    <item android:id="@+id/cancel_changes"
+          android:icon="@drawable/icon_cancel"
+          android:title="Cancel Changes" />
+</menu>

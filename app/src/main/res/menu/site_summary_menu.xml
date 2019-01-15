@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/goto_history"
+          android:icon="@drawable/icon_history"
+          android:title="Site History" />
+    <item android:id="@+id/goto_contacts"
+          android:icon="@drawable/icon_contacts"
+          android:title="Site Contacts" />
+    <item android:id="@+id/goto_equipment"
+          android:icon="@drawable/icon_equipment"
+          android:title="Site Equipment" />
+</menu>

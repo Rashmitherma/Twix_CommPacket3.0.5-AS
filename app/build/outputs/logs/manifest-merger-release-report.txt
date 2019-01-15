@@ -1,0 +1,609 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:1-270:12
+	package
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:3:7-31
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:5:7-34
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:4:7-30
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:7:5-11:24
+	android:largeScreens
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:9:23-50
+	android:smallScreens
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:7:23-51
+	android:normalScreens
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:8:23-52
+	android:xlargeScreens
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:10:23-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:12:5-95
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:13:5-83
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:14:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:15:5-97
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:16:5-91
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:17:22-77
+application
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:18:5-269:19
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:20:6-38
+	android:largeHeap
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:21:6-30
+	android:icon
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:19:6-35
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:18:18-64
+activity#com.twix_agent.Twix_AgentTabActivity
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:22:9-31:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:26:19-56
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:23:19-51
+	android:configChanges
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:25:19-54
+	android:theme
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:24:19-66
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:22:19-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:29:27-74
+activity#com.twix_agent.Twix_AgentTab1
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:33:3-35:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:34:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:33:58-90
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:33:13-57
+activity#com.twix_agent.Twix_AgentActivityGroup1
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:37:9-39:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:38:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:37:74-106
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:37:19-73
+activity#com.twix_agent.Twix_AgentActivityGroup2
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:41:9-43:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:42:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:41:74-106
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:41:19-73
+activity#com.twix_agent.filechooser
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:45:9-47:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:46:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:45:61-93
+	android:noHistory
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:46:49-74
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:45:19-60
+activity#com.twix_agent.photopicker
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:48:10-50:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:49:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:48:62-94
+	android:noHistory
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:49:49-74
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:48:20-61
+activity#com.twix_agent.FileexplorerActivity
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:51:9-53:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:52:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:51:70-102
+	android:launchMode
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:52:75-110
+	android:noHistory
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:52:49-74
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:51:19-69
+activity#com.twix_agent.Item
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:54:9-56:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:55:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:54:54-86
+	android:launchMode
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:55:75-110
+	android:noHistory
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:55:49-74
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:54:19-53
+activity#com.twix_agent.Twix_AgentActivityGroup3
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:58:9-60:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:59:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:58:74-106
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:58:19-73
+activity#com.twix_agent.Twix_AgentAddAttachments
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:61:10-63:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:62:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:61:75-107
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:61:20-74
+activity#com.twix_agent.Twix_AgentEmailAttachments
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:64:10-66:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:65:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:64:77-109
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:64:20-76
+activity#com.twix_agent.Twix_AgentSiteSearch
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:67:9-69:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:68:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:67:70-102
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:67:19-69
+activity#com.twix_agent.Twix_Agentjobdocs
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:70:10-72:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:71:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:70:68-100
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:70:20-67
+activity#com.twix_agent.Twix_AgentAddEmail
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:73:9-75:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:74:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:73:68-100
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:73:19-67
+activity#com.twix_agent.Twix_AgentSiteSummary
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:76:9-78:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:77:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:76:71-103
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:76:19-70
+activity#com.twix_agent.Twix_AgentContacts
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:80:9-82:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:81:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:80:68-100
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:80:19-67
+activity#com.twix_agent.Twix_AgentTab2
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:84:3-86:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:85:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:84:58-90
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:84:13-57
+activity#com.twix_agent.Twix_AgentTab3
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:88:9-90:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:89:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:88:64-96
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:88:19-63
+activity#com.twix_agent.Twix_AgentOpenTagsTabHost
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:92:3-94:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:93:7-44
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:92:69-101
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:92:13-68
+activity#com.twix_agent.Twix_AgentOpenTag
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:96:9-98:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:97:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:96:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:96:19-66
+activity#com.twix_agent.webview
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:99:10-101:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:100:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:99:58-90
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:99:20-57
+activity#com.twix_agent.WebLinks
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:103:10-105:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:104:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:103:59-91
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:103:20-58
+activity#com.twix_agent.Twix_AgentOpenTagSiteDetails
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:107:9-109:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:108:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:107:78-110
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:107:19-77
+activity#com.twix_agent.Twix_AgentOpenTagReceipt
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:111:9-113:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:112:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:111:74-106
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:111:19-73
+activity#com.twix_agent.Twix_AgentSyncPage
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:115:3-117:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:116:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:115:62-94
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:115:13-61
+activity#com.twix_agent.Twix_AgentSearch
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:119:3-121:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:120:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:119:60-92
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:119:13-59
+activity#com.twix_agent.Twix_AgentLogin
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:123:3-126:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:125:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:123:59-91
+	android:theme
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:124:5-48
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:123:13-58
+activity#com.twix_agent.Twix_AgentPMTabHost
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:128:3-130:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:129:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:128:63-95
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:128:13-62
+activity#com.twix_agent.Twix_AgentPM_Tab0
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:132:3-134:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:133:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:132:61-93
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:132:13-60
+activity#com.twix_agent.Twix_AgentPM_Tab1
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:136:3-138:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:137:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:136:61-93
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:136:13-60
+activity#com.twix_agent.Twix_AgentPM_Tab2
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:140:3-142:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:141:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:140:61-93
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:140:13-60
+activity#com.twix_agent.Twix_AgentPM_Tab3
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:144:9-146:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:145:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:144:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:144:19-66
+activity#com.twix_agent.Twix_AgentPM_Tab4
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:148:9-150:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:149:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:148:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:148:19-66
+activity#com.twix_agent.Twix_AgentPM_Tab5
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:152:9-154:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:153:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:152:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:152:19-66
+activity#com.twix_agent.Twix_AgentPM_Tab6
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:156:9-158:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:157:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:156:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:156:19-66
+activity#com.twix_agent.Twix_AgentPM_Tab7
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:160:3-162:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:161:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:160:61-93
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:160:13-60
+activity#com.twix_agent.Twix_AgentPM_Parts_Materials
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:164:3-166:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:165:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:164:72-104
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:164:13-71
+activity#com.twix_agent.Twix_AgentPM_Labor
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:168:3-170:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:169:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:168:62-94
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:168:13-61
+activity#com.twix_agent.Twix_AgentSignature
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:172:3-174:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:173:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:172:63-95
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:172:13-62
+activity#com.twix_agent.Twix_AgentBlue
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:176:9-179:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:177:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:176:64-96
+	android:hardwareAccelerated
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:178:11-45
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:176:19-63
+activity#com.twix_agent.Twix_AgentSafetyChecklist
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:181:9-183:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:182:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:181:75-107
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:181:19-74
+activity#com.twix_agent.Twix_AgentServiceUnitTabHost
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:186:9-188:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:187:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:186:78-110
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:186:19-77
+activity#com.twix_agent.Twix_AgentServiceTagUnit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:190:9-192:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:191:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:190:74-106
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:190:19-73
+activity#com.twix_agent.Twix_AgentServiceUnitLabor
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:194:9-196:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:195:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:194:76-108
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:194:19-75
+activity#com.twix_agent.Twix_AgentServiceUnitMaterial
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:198:9-200:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:199:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:198:79-111
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:198:19-78
+activity#com.twix_agent.Twix_AgentServiceUnitRefrigerant
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:201:10-203:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:202:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:201:83-115
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:201:20-82
+activity#com.twix_agent.Twix_AgentServiceUnitPhoto
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:205:9-207:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:206:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:205:76-108
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:205:19-75
+activity#com.twix_agent.Twix_AgentServiceUnitPMChecklist
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:209:9-211:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:210:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:209:82-114
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:209:19-81
+activity#com.twix_agent.Twix_AgentSiteHistory_Tags
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:213:9-215:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:214:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:213:76-108
+	android:launchMode
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:214:50-85
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:213:19-75
+activity#com.twix_agent.Twix_AgentSiteHistory_TagDetail
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:217:9-219:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:218:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:217:81-113
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:217:19-80
+activity#com.twix_agent.Twix_AgentEquipmentTabHost
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:221:9-223:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:222:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:221:76-108
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:221:19-75
+activity#com.twix_agent.Twix_AgentEquipmentTabHost_Edit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:225:9-227:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:226:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:225:81-113
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:225:19-80
+activity#com.twix_agent.Twix_AgentEquipment
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:229:9-231:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:230:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:229:69-101
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:229:19-68
+activity#com.twix_agent.Twix_AgentEquipmentDetail
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:233:9-235:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:234:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:233:75-107
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:233:19-74
+activity#com.twix_agent.Twix_AgentEquipmentDetail_Edit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:237:9-239:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:238:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:237:80-112
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:237:19-79
+activity#com.twix_agent.Twix_AgentFans
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:241:9-243:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:242:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:241:64-96
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:241:19-63
+activity#com.twix_agent.Twix_AgentFans_Edit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:245:9-247:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:246:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:245:69-101
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:245:19-68
+activity#com.twix_agent.Twix_AgentFilters
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:249:9-251:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:250:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:249:67-99
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:249:19-66
+activity#com.twix_agent.Twix_AgentFilters_Edit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:253:9-255:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:254:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:253:72-104
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:253:19-71
+activity#com.twix_agent.Twix_AgentRefCircuits
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:257:9-259:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:258:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:257:71-103
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:257:19-70
+activity#com.twix_agent.Twix_AgentRefCircuits_Edit
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:261:9-263:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:262:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:261:76-108
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:261:19-75
+activity#com.twix_agent.Twix_AgentEquipmentOld
+ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:265:9-267:20
+	android:screenOrientation
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:266:11-48
+	android:label
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:265:72-104
+	android:name
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml:265:19-71
+uses-sdk
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		ADDED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Twix_CommPacket11\app\src\main\AndroidManifest.xml

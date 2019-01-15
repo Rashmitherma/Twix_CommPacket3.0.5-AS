@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="1200dp"
+    style="@style/table" >
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="3dp" >
+		<TableRow>
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="        Site Name        "
+				android:layout_margin="2dp"
+				style="@style/header" />
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="         Address         "
+				android:layout_margin="2dp"
+				style="@style/header" />
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="      City      "
+				android:layout_margin="2dp"
+				style="@style/header" />
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="    Building No     "
+				android:layout_margin="2dp"
+				style="@style/header" />
+		</TableRow>
+		
+		
+		
+	</TableLayout>
+	
+	<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<TableLayout
+				android:id="@+id/ServiceAddressListBuild"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp" >
+			</TableLayout>
+		</ScrollView>
+	
+</LinearLayout>

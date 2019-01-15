@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/login_main"
+	android:layout_gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		style="@style/table">
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Please Login"
+			android:layout_margin="2px"
+			android:padding="8px"
+			style="@style/header" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_margin="2px"
+			style="@style/table">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Username"
+				style="@style/sub1"
+				android:layout_marginTop="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp" />
+	
+			<EditText
+				android:id="@+id/login_username"
+				android:layout_width="200dp"
+				android:layout_height="fill_parent"
+				android:hint="username"
+				android:singleLine="true"
+				android:nextFocusDown="@+id/login_password"
+				style="@style/sub1_edit" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_margin="2px"
+			style="@style/table">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Password"
+				style="@style/sub1"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp" />
+	
+			<EditText
+				android:id="@+id/login_password"
+				android:layout_width="200dp"
+				android:layout_height="fill_parent"
+				android:hint="password"
+				android:inputType="textPassword"
+				android:singleLine="true"
+				android:nextFocusUp="@+id/login_username"
+				android:nextFocusDown="@+id/submit_login"
+				style="@style/sub1_edit" />
+		</LinearLayout>
+		
+		    
+		<LinearLayout
+		    android:id="@+id/OfflineHost"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone" >
+		    <CheckBox
+		        android:id="@+id/Offline"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:nextFocusUp="@+id/login_username"
+		    	android:nextFocusDown="@+id/submit_login"
+		    	android:layout_marginLeft="10dp" />
+		    <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Offline Login"
+				style="@style/sub1"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp" />
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/submit_login"
+			android:layout_width="120dp"
+			android:layout_height="40dp"
+			android:text="Submit"
+			android:layout_margin="5px"
+			style="@style/button_small"
+			android:layout_gravity="center"
+			android:layout_weight="0"
+			android:nextFocusUp="@+id/login_password" />
+
+	</LinearLayout>
+
+
+</RelativeLayout>

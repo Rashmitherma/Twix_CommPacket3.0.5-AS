@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3px"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Site\nSummary" />
+
+        <TextView
+            style="@style/header_tab"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3px"
+            android:layout_marginTop="3px"
+            android:layout_marginBottom="3px"
+            android:paddingLeft="10px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:text="Search job related documents" />
+        
+        <TextView
+            android:id="@+id/History_SiteName"
+            style="@style/header_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3px"
+            android:layout_marginTop="3px"
+            android:layout_marginBottom="3px"
+            android:paddingRight="10px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px" />
+        
+    </LinearLayout>
+        
+
+   
+    <LinearLayout
+        android:id="@+id/WorkFlowTable"
+        style="@style/table"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+       
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+           
+            android:orientation="horizontal" >
+
+   			<TextView
+   			    android:id="@+id/text"
+   			    style="@style/sub1_Xlarge"
+   			    android:layout_width="200dp"
+   			    android:layout_height="wrap_content"
+   			    android:layout_gravity="center"
+   			    android:layout_weight="0.01"
+   			    android:text="Jobno" />
+
+   			<EditText
+   			    android:id="@+id/jobno"
+   			    style="@style/sub1_edit"
+   			    android:layout_width="100dp"
+   			    android:layout_height="51dp"
+   			    android:layout_weight="0.15"
+   			    android:ems="10"
+   			    android:inputType="textCapWords"
+   			    android:maxLength="100"
+   			    android:singleLine="true" />
+            
+        	<Button android:text="Search by Jobno" 
+            android:id="@+id/B1"
+            android:layout_width="400dp"
+			android:layout_height="wrap_content"
+			style="@style/button_3"
+			android:layout_weight="0"
+			android:padding="10px"
+			android:layout_margin="10px" />
+       </LinearLayout>
+    </LinearLayout>
+	<LinearLayout
+        style="@style/header"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3px"
+         android:layout_gravity="center"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+         <TextView
+            	 android:text="OR" 
+   			     android:id="@id/jobno"
+   			    style="@style/button"
+   			     android:layout_width="10dp"
+   			     android:layout_height="match_parent"
+   			     android:layout_weight="1.33"
+   			      			     
+   			     android:maxLength="100"
+   			     android:singleLine="true" />
+        
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@id/WorkFlowTable"
+        style="@style/table"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+         
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+           
+            android:orientation="horizontal" >
+
+   			<TextView
+   			    android:id="@id/text"
+   			    style="@style/sub1_Xlarge"
+   			    android:layout_width="200dp"
+   			    android:layout_height="wrap_content"
+   			    android:layout_gravity="center"
+   			    android:layout_weight="0.01"
+   			    android:text="SiteName" />
+   			<EditText
+   			    android:id="@+id/sitename"
+   			    style="@style/sub1_edit"
+   			    android:layout_width="100dp"
+   			    android:layout_height="51dp"
+   			    android:layout_weight="0.15"
+   			    android:ems="10"
+   			    android:inputType="textCapWords"
+   			    android:maxLength="100"
+   			    android:singleLine="true" />
+         
+        	<Button android:text="Search by SiteName" 
+            android:id="@+id/B2"
+            android:layout_width="400dp"
+			android:layout_height="wrap_content"
+			style="@style/button_3"
+			android:layout_weight="0"
+			android:padding="10px"
+			android:layout_margin="10px" />
+        	
+        	
+   			
+  
+        </LinearLayout>
+    </LinearLayout>
+     <LinearLayout
+        android:id="@id/WorkFlowTable"
+        style="@style/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal" 
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:orientation="horizontal" >
+   			<TextView android:id="@+id/test_6months"
+              android:layout_width="wrap_content"
+               android:layout_gravity= "center"
+              android:layout_height="wrap_content"
+              android:textSize="30dp"
+              android:text="Please click on the row to downlaod file" />
+   			
+  
+        </LinearLayout>
+    </LinearLayout>
+        
+    
+         
+         
+         
+         
+    <LinearLayout
+        android:id="@id/WorkFlowTable"
+        style="@style/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Sort_JobNo"
+                style="@style/column_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:padding="10px"
+                android:text="JobNo"
+                android:layout_weight="0.55" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sort_File"
+                style="@style/column_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:padding="10px"
+                android:text="File"
+                android:layout_weight="1.5" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sort_Title"
+                style="@style/column_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:padding="10px"
+                android:text="Title"
+                android:layout_weight="0.9" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sort_DateSubmitted"
+                style="@style/column_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:padding="10px"
+                android:text="DateSubmitted"
+                android:layout_weight="0.7" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Sort_SiteName"
+                style="@style/column_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:padding="10px"
+                android:text="SiteName"
+                android:layout_weight="0.8" >
+            </TextView>
+
+      
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/TagBuild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

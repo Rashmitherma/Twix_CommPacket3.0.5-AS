@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+	<LinearLayout
+		android:id="@+id/dummy_focus"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="0px"
+	    android:layout_height="0px" />
+	
+	<ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<TableLayout
+			android:id="@+id/WorkFlowTable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="2px"
+			android:background="#ff9999cc"
+			android:cacheColorHint="#ff9999cc" >
+			<TableRow>
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Category: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header" />
+				<TextView
+					android:id="@+id/Text_EquipmentCategory"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_value" />
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Unit No: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header" />
+				<TextView
+					android:id="@+id/Text_UnitNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_value" />
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Area Served: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_AreaServed"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Economizer: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Economizer"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Refrigerant Type: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_RefrigerantType"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Manufacturer: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Manufacturer"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Model: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Model"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="PM Frequency: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_AdditionalInfo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Voltage: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Voltage"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Capacity: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Capacity"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="SerialNo: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_SerialNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Mfg Year: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_MfgYear"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Date In Service: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_DateInService"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Date out of Service: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1" >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_DateOutOfService"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer" >
+				</TextView>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Notes: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginRight="2px"
+					style="@style/sub1" >
+				</TextView>
+			</TableRow>
+		<TableLayout
+			android:id="@+id/NotesTable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="2px">
+			<TableRow>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					style="@style/spacer"
+					android:text="        " >
+				</TextView>
+				<TextView
+					android:id="@+id/Text_Notes"
+					android:layout_height="fill_parent"
+					android:layout_width="fill_parent"
+					android:text=""
+					android:layout_marginRight="2px"
+					android:layout_marginLeft="2px"
+					android:layout_marginBottom="2px"
+					android:minLines="1"
+					android:width="1000dp"
+					style="@style/sub1_value" >
+				</TextView>
+			</TableRow>
+			</TableLayout>
+		</TableLayout>
+	</ScrollView>
+</RelativeLayout>

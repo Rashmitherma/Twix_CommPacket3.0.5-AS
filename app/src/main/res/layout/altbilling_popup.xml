@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:minWidth="1200dp"
+	style="@style/table">
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="Input Alternate Billing"
+		style="@style/header_Xlarge"
+		android:layout_weight="0"/>
+
+	<TableLayout
+		android:id="@+id/TagTable"
+		android:layout_width="fill_parent"
+		android:layout_margin="3px"
+		android:layout_height="wrap_content">
+		<TableRow android:layout_margin="2px">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Name: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltName"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:hint="Name"
+				style="@style/sub1_edit_Xlarge"
+				android:inputType="textCapWords"
+				android:maxLength="100"
+				android:singleLine="true" />
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Attention: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltAttn"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:hint="attention reason"
+				style="@style/sub1_edit_Xlarge"
+				android:singleLine="true"
+				android:inputType="textCapWords"
+				android:maxLength="100" />
+		</TableRow>
+		<TableRow android:layout_margin="2px">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Address 1: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltAddress1"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:hint="address 1"
+				style="@style/sub1_edit_Xlarge"
+				android:singleLine="true"
+				android:inputType="textCapWords"
+				android:maxLength="100" />
+		</TableRow>
+		<TableRow android:layout_margin="2px">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Address 2: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltAddress2"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:hint="address 2"
+				style="@style/sub1_edit_Xlarge"
+				android:singleLine="true"
+				android:inputType="textCapWords"
+				android:maxLength="100" />
+		</TableRow>
+		<TableRow android:layout_margin="2px">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Address 3: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltAddress3"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:hint="address 3 or city, state, zip"
+				style="@style/sub1_edit_Xlarge"
+				android:singleLine="true"
+				android:inputType="textCapWords"
+				android:maxLength="100" />
+		</TableRow>
+		<TableRow android:layout_margin="2px">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:text="Address 4: "
+				style="@style/header_Xlarge"
+				android:layout_weight="0"/>
+			<EditText
+				android:id="@+id/AltAddress4"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:hint="address 4 or blank for US"
+				style="@style/sub1_edit_Xlarge"
+				android:singleLine="true"
+				android:inputType="textCapWords"
+				android:maxLength="100" />
+		</TableRow>
+
+	</TableLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<Button
+			android:id="@+id/Save"
+			android:layout_width="180dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="3px"
+			android:layout_marginRight="30px"
+			android:layout_marginBottom="3px"
+			android:text="Save"
+			style="@style/button"
+			android:layout_weight="0"/>
+		<Button
+			android:id="@+id/Clear"
+			android:layout_width="180dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="3px"
+			android:layout_marginLeft="30px"
+			android:layout_marginRight="30px"
+			android:layout_marginBottom="3px"
+			android:text="Clear"
+			style="@style/button"
+			android:layout_weight="0"/>
+		<Button
+			android:id="@+id/Cancel"
+			android:layout_width="180dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="3px"
+			android:layout_marginLeft="30px"
+			android:layout_marginBottom="3px"
+			android:text="Cancel"
+			style="@style/button"
+			android:layout_weight="0"/>
+	</LinearLayout>
+</LinearLayout>

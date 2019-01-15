@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:id="@+id/dummy_focus"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:orientation="horizontal"
+		android:layout_width="0px"
+		android:layout_height="0px"/>
+	
+	<ScrollView
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:id="@+id/WorkFlowTable"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="2px"
+			android:background="#ff9999cc"
+			android:cacheColorHint="#ff9999cc"
+			android:orientation="vertical"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:layout_weight="0"
+			    style="@style/header" >
+				<TextView
+				    android:id="@+id/Title_EquipmentCategory"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Category: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_large"/>
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_large">
+					<Spinner
+						android:id="@+id/Text_EquipmentCategory"
+						android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						style="@style/header_edit2"/>
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5px"
+						android:src="@drawable/drop_arrow"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/Title_UnitNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Unit No: "
+					android:layout_marginLeft="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_large"/>
+
+				<EditText
+					android:id="@+id/Text_UnitNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="20"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/header_edit"/>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Area Served: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_AreaServed"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:inputType="textCapWords"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Economizer: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_Economizer"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="1"
+					android:singleLine="true"
+					android:digits="NY"
+					android:inputType="textCapCharacters|textNoSuggestions"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Refrigerant: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<RelativeLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:layout_weight="1">
+					<Spinner
+						android:id="@+id/Text_RefrigerantType"
+						android:layout_height="fill_parent"
+						android:layout_width="fill_parent"
+						style="@style/header_edit2"/>
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5px"
+						android:src="@drawable/drop_arrow"/>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/Title_Manufacturer"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Manufacturer: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<AutoCompleteTextView
+					android:id="@+id/Text_Manufacturer"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:inputType="textCapWords"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:id="@+id/Title_Model"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Model: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_Model"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="PM Frequency: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<RelativeLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:layout_weight="1">
+					<Spinner
+						android:id="@+id/Text_AdditionalInfo"
+						android:layout_height="fill_parent"
+						android:layout_width="fill_parent"
+						style="@style/header_edit2"/>
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5px"
+						android:src="@drawable/drop_arrow"/>
+				</RelativeLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Voltage: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				<AutoCompleteTextView
+					android:id="@+id/Text_Voltage"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="15"
+					android:singleLine="true"
+					android:inputType="textCapWords"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+				<TextView
+					android:id="@+id/Title_Capacity"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Capacity: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<LinearLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/Text_Capacity"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:maxLength="15"
+						android:singleLine="true"
+						android:digits="1234567890."
+						android:inputType="phone"
+						android:hint="0.000"
+						android:layout_marginRight="2px"
+						style="@style/sub1_edit_noweight"
+						android:layout_weight="2"/>
+
+					<AutoCompleteTextView
+						android:id="@+id/Auto_Capacity"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:hint=" units"
+						android:maxLength="10"
+						android:singleLine="true"
+						android:inputType="textCapCharacters"
+						android:layout_marginLeft="2px"
+						style="@style/sub1_edit_noweight"
+						android:layout_weight="1"/>
+
+				</LinearLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:id="@+id/Title_SerialNo"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="SerialNo: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+
+				<EditText
+					android:id="@+id/Text_SerialNo"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="50"
+					android:singleLine="true"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+
+
+				<TextView
+					android:id="@+id/Title_MfgYear"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Mfg Year: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<EditText
+					android:id="@+id/Text_MfgYear"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:maxLength="4"
+					android:singleLine="true"
+					android:digits="01234567890"
+					android:inputType="phone"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_edit"/>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Date in Service: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				
+				<LinearLayout
+				    android:layout_height="fill_parent"
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px" >
+					<TextView
+						android:id="@+id/Text_DateInService"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						style="@style/sub1_edit"/>
+					<Button
+					    android:id="@+id/DateInService_Clear"
+					    style="@style/button_small"
+					    android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:layout_weight="0"
+						android:typeface="normal"
+						android:text="Clear"/>
+				</LinearLayout>
+				
+				<TextView
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:text="Date Out of Service:"
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+				
+				<LinearLayout
+				    android:layout_height="fill_parent"
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px" >
+					<TextView
+						android:id="@+id/Text_DateOutOfService"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						style="@style/sub1_edit"/>
+					<Button
+					    android:id="@+id/DateOutOfService_Clear"
+					    style="@style/button_small"
+					    android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:layout_weight="0"
+						android:typeface="normal"
+						android:text="Clear"/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Bar Code:"
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px"
+					style="@style/sub1_large"/>
+
+				<LinearLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_marginRight="2px"
+					android:layout_marginTop="2px"
+					android:layout_marginBottom="2px">
+					<EditText
+						android:id="@+id/Text_BarCode"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:hint="type or scan"
+						android:maxLength="50"
+						android:singleLine="true"
+						style="@style/sub1_edit"/>
+
+					<ImageButton
+						android:id="@+id/Button_Scanner"
+						android:layout_height="fill_parent"
+						android:layout_width="40px"
+						android:src="@drawable/icon_scanner"
+						android:background="@drawable/button_bg"/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginLeft="25px"
+					android:layout_marginRight="2px"
+					android:layout_weight="2">
+					
+					<TextView
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:text="Last Verified By: "
+						style="@style/sub1_large"
+						android:layout_weight="0" />
+					
+					<TextView
+						android:id="@+id/LastVerified"
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:text=""
+						style="@style/sub1_value_large"
+						android:layout_weight="1" />
+				</LinearLayout>
+				
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent" >
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:text="Notes: "
+					android:layout_marginLeft="25px"
+					android:layout_marginTop="2px"
+					android:layout_marginRight="2px"
+					style="@style/sub1_large"/>
+				<LinearLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_marginLeft="25px"
+					android:layout_marginRight="2px"
+					android:layout_weight="1">
+					<TextView
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:text="Verify: "
+						android:layout_marginLeft="25px"
+						style="@style/sub1_large"
+						android:layout_weight="0" />
+					<CheckBox
+						android:id="@+id/Verified"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+
+			    <TextView
+			        style="@style/sub1_large"
+			        android:layout_width="0dp"
+			        android:layout_height="50dp"
+			        android:layout_marginLeft="25px"
+			        android:layout_marginRight="2px"
+			        android:layout_marginTop="2px"
+			        android:layout_weight="0.49"
+			        android:text="Picture: " />
+
+			    <Button
+			        android:id="@+id/Pic"
+			        style="@style/button_small"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="0"
+			        android:text="Attach Pic"
+			        android:typeface="normal"
+			        android:visibility="visible" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1" >
+
+			    <EditText
+			        android:id="@+id/Text_Notes"
+			        style="@style/sub1_edit"
+			        android:layout_width="fill_parent"
+			        android:layout_height="188dp"
+			        android:layout_marginBottom="25px"
+			        android:layout_marginLeft="25px"
+			        android:layout_marginRight="25px"
+			        android:layout_weight="0.98"
+			        android:gravity="top|left"
+			        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+			        android:lines="5"
+			        android:maxLength="5000" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

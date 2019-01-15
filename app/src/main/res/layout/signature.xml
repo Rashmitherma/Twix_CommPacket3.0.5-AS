@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/dummyView"
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:focusable="true">
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+
+			<TableLayout
+				android:id="@+id/TagTable"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3px"
+				android:background="#ff9999cc"
+				android:cacheColorHint="#ff9999cc">
+				<TableRow>
+					<TextView
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text="Site Name: "
+						android:layout_marginLeft="2px"
+						style="@style/header"/>
+					<TextView
+						android:id="@+id/Text_SiteName"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="2px"
+						style="@style/header_value"/>
+					<TextView
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text="Service Type: "
+						android:layout_marginLeft="2px"
+						style="@style/header"/>
+					<TextView
+						android:id="@+id/Text_ServiceType"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="2px"
+						style="@style/header_value"/>
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Batch No: "
+						android:layout_marginLeft="25px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_BatchNo"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="15px"
+						style="@style/sub1_value"/>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Job No: "
+						android:layout_marginLeft="15px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_JobNo"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="25px"
+						style="@style/sub1_value"/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Disposition: "
+						android:layout_marginLeft="25px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_Disposition"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="15px"
+						style="@style/sub1_value"/>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Tag Status: "
+						android:layout_marginLeft="15px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_Completed"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="25px"
+						style="@style/sub1_value"/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Address 1: "
+						android:layout_marginLeft="25px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_Address1"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="15px"
+						style="@style/sub1_value"/>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="City: "
+						android:layout_marginLeft="15px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_City"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="25px"
+						style="@style/sub1_value"/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="Address 2: "
+						android:layout_marginLeft="25px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_Address2"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="15px"
+						style="@style/sub1_value"/>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="State: "
+						android:layout_marginLeft="15px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_State"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="25px"
+						style="@style/sub1_value"/>
+				</TableRow>
+
+				<TableRow>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginLeft="25px"
+						android:layout_marginRight="15px"
+						style="@style/sub1"
+						android:layout_weight="2"/>
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:text="ZIP: "
+						android:layout_marginLeft="15px"
+						style="@style/sub1"/>
+					<TextView
+						android:id="@+id/Text_Zip"
+						android:layout_height="fill_parent"
+						android:layout_width="0dp"
+						android:text=""
+						android:layout_marginRight="25px"
+						style="@style/sub1_value"/>
+				</TableRow>
+			</TableLayout>
+
+			<TableLayout
+				android:id="@+id/AltBillingTable"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3px">
+			</TableLayout>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Units Serviced"
+				style="@style/header"
+				android:layout_weight="0"/>
+
+			<LinearLayout
+				android:id="@+id/ServiceUnitBuild"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/header"
+				android:layout_weight="0"
+				android:layout_margin="2px">
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Customer Signature"
+					style="@style/header_Xlarge"
+					android:padding="5px" />
+				<LinearLayout
+					android:id="@+id/CustomerSignature"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="gone">
+					<ImageButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="10px"
+						android:src="@drawable/plus"
+						android:background="#00000000"
+						android:onClick="CustomerSignature"
+						android:layout_gravity="center_vertical"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Add Signature"
+						style="@style/sub1"
+						android:layout_weight="1"
+						android:padding="5px"
+						android:layout_margin="2px"/>
+				</LinearLayout>
+				<Button
+					android:id="@+id/CustomerSignature_Edit"
+					android:layout_width="wrap_content"
+					android:layout_height="40px"
+					android:text="Edit Signature"
+					style="@style/button_small"
+					android:layout_weight="0"
+					android:visibility="gone"
+					android:onClick="CustomerSignature">
+				</Button>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center"
+				style="@style/table">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="No Signature Reason: "
+					style="@style/sub1_large"
+					android:layout_weight="0"/>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_margin="3px">
+					<Spinner
+						android:id="@+id/NoSignatureReason"
+						android:layout_height="40dp"
+						android:layout_width="400dp"
+						android:layout_margin="2dp"
+						style="@style/sub1_edit_large"
+						android:singleLine="true"
+						android:inputType="textCapWords"/>
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:src="@drawable/drop_arrow"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="5dp"
+						android:layout_alignRight="@id/NoSignatureReason"/>
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/SignatureHolder"
+				android:layout_width="1000dp"
+				android:layout_height="300dp"
+				android:layout_gravity="center_horizontal"
+				android:visibility="gone"/>
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				style="@style/table_light" >
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:layout_margin="3px" >
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Email To: "
+						android:padding="5px"
+						style="@style/sub1"
+						android:layout_weight="0" />
+					<RelativeLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_margin="3px">
+						<Spinner
+							android:id="@+id/Spinner_EmailList"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+							android:layout_margin="2dp"
+							style="@style/sub1_edit_large"
+							android:singleLine="true"
+							android:inputType="textCapWords"/>
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:src="@drawable/drop_arrow"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:layout_alignRight="@id/Spinner_EmailList"/>
+					</RelativeLayout>
+				</LinearLayout>
+				<EditText
+					android:id="@+id/EmailList"
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:gravity="top|left"
+					android:padding="5px"
+					android:maxLength="500"
+					android:inputType="textEmailAddress"
+					android:hint="emails seperatated by commas"
+					style="@style/sub1_edit"
+					android:layout_weight="4" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

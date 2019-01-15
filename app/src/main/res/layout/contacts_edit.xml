@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="1200dp"
+    style="@style/table"
+    android:paddingBottom="10px" >
+    <LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    style="@style/header" >
+	    <TextView
+	   		android:id="@+id/Title_Name"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Name: "
+			android:layout_marginLeft="45dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/header_Xlarge" >
+		</TextView>
+		<EditText
+			android:id="@+id/name"
+			android:layout_height="fill_parent"
+			android:layout_width="200dp"
+			android:hint="name"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/header_edit_Xlarge"
+			android:layout_weight="5"
+			android:singleLine="true"
+			android:maxLength="50"
+			android:inputType="textCapWords">
+		</EditText>
+		
+		<TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Contact Type: "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/header_Xlarge">
+		</TextView>
+		<EditText
+			android:id="@+id/contact_type"
+			android:layout_height="fill_parent"
+			android:layout_width="200dp"
+			android:hint="type"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="45dp"
+			style="@style/header_edit_Xlarge"
+			android:layout_weight="5"
+			android:singleLine="true"
+			android:maxLength="50"
+			android:inputType="textCapWords">
+		</EditText>
+	</LinearLayout>
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Phone Type: "
+			android:layout_marginLeft="45dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical">
+		</TextView>
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical">
+			<Spinner
+				android:id="@+id/type1"
+				android:layout_height="40dp"
+				android:layout_width="240dp"
+				android:layout_marginLeft="2dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="2dp"
+				android:layout_marginRight="2dp"
+				style="@style/sub1_edit_large"
+				android:singleLine="true"
+				android:inputType="textCapWords">
+			</Spinner>
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/drop_arrow"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="5dp"
+				android:layout_alignRight="@id/type1" />
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/Title_Phone1"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Phone #: "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical" >
+		</TextView>
+		<EditText
+			android:id="@+id/phone1"
+			android:layout_height="fill_parent"
+			android:layout_width="250dp"
+			android:hint="(   )    -    "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_edit_large"
+			android:singleLine="true"
+			android:inputType="phone"
+			android:maxLength="13"
+			android:digits="1234567890">
+		</EditText>
+		
+		<TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Ext: "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical" >
+		</TextView>
+		<EditText
+			android:id="@+id/ext1"
+			android:layout_height="fill_parent"
+			android:layout_width="100dp"
+			android:hint="ext"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="45dp"
+			style="@style/sub1_edit_large"
+			android:singleLine="true"
+			android:maxLength="10"
+			android:inputType="number">
+		</EditText>
+	</LinearLayout>
+    
+    <LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Phone Type: "
+			android:layout_marginLeft="45dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical">
+		</TextView>
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical">
+			<Spinner
+				android:id="@+id/type2"
+				android:layout_height="40dp"
+				android:layout_width="240dp"
+				android:layout_marginLeft="2dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="2dp"
+				android:layout_marginRight="2dp"
+				style="@style/sub1_edit_large"
+				android:singleLine="true"
+				android:inputType="textCapWords">
+			</Spinner>
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/drop_arrow"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="5dp"
+				android:layout_alignRight="@id/type2" />
+		</RelativeLayout>
+		
+		<TextView
+			android:id="@+id/Title_Phone2"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Phone #: "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical" >
+		</TextView>
+		<EditText
+			android:id="@+id/phone2"
+			android:layout_height="fill_parent"
+			android:layout_width="250dp"
+			android:hint="(   )    -    "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_edit_large"
+			android:singleLine="true"
+			android:inputType="phone"
+			android:maxLength="13"
+			android:digits="1234567890">
+		</EditText>
+		
+		<TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Ext: "
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large"
+			android:gravity="right|center_vertical" >
+		</TextView>
+		<EditText
+			android:id="@+id/ext2"
+			android:layout_height="fill_parent"
+			android:layout_width="100dp"
+			android:hint="ext"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="45dp"
+			style="@style/sub1_edit_large"
+			android:typeface="monospace"
+			android:singleLine="true"
+			android:maxLength="10"
+			android:inputType="number">
+		</EditText>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Email Address: "
+			android:layout_marginLeft="65dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			style="@style/sub1_large" >
+		</TextView>
+		<EditText
+			android:id="@+id/email"
+			android:layout_height="fill_parent"
+			android:layout_width="600dp"
+			android:hint="email"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="65dp"
+			style="@style/sub1_edit_large"
+			android:layout_weight="6"
+			android:singleLine="true"
+			android:maxLength="50"
+			android:inputType="textEmailAddress">
+		</EditText>
+	</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center" >
+				<Button 
+			    	android:id="@+id/Save"
+			    	android:layout_width="200dp"
+			    	android:layout_height="50dp"
+			    	android:layout_marginRight="50px"
+			    	android:text="Save"
+			    	style="@style/button"
+			    	android:layout_weight="0" />
+			    <Button 
+			    	android:id="@+id/Cancel"
+			    	android:layout_width="200dp"
+			    	android:layout_height="50dp"
+			    	android:layout_marginLeft="50px"
+			    	android:layout_marginRight="50px"
+			    	android:text="Cancel"
+			    	style="@style/button"
+			    	android:layout_weight="0" />
+	    	</LinearLayout>
+	    	<Button 
+		    	android:id="@+id/Delete"
+		    	android:layout_width="200dp"
+		    	android:layout_height="50dp"
+		    	android:layout_marginRight="50px"
+		    	android:text="Delete"
+		    	style="@style/button"
+		    	android:layout_weight="0" />
+	    </LinearLayout>
+	
+</LinearLayout>

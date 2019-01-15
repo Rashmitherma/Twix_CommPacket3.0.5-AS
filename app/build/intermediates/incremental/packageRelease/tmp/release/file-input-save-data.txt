@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Thu Jan 10 14:48:46 PST 2019
+1.base=C\:\\Twix_CommPacket11\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=themes.xml
+0.set=ASSET
+0.base=C\:\\Twix_CommPacket11\\app\\build\\intermediates\\merged_assets\\release\\mergeReleaseAssets\\out
+1.path=classes.dex

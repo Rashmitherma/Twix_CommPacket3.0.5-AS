@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0"
+	        android:background="@drawable/sidebar_bg" >
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="4dp"
+		        android:orientation="vertical">
+		        <Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Equipment\nList"
+					style="@style/back_button"
+					android:layout_margin="5dp" />
+			    <ImageView
+			      	android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/title_icon" />
+			</LinearLayout>
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	        </TabWidget>
+	        
+	        <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" >
+		        <ImageButton
+		            android:id="@+id/Save"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="#ff7777aa"
+					android:textStyle="bold"
+					android:padding="15dp"
+					android:layout_margin="3dp"
+					android:src="@drawable/icon_save"
+					android:background="@drawable/button_bg" />
+					
+				<ImageButton
+					android:id="@+id/Delete"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="#ff7777aa"
+					android:textStyle="bold"
+					android:padding="15dp"
+					android:layout_margin="3dp"
+					android:src="@drawable/icon_remove_equipment"
+					android:background="@drawable/button_bg" />
+			</LinearLayout>
+			<Button
+			    android:id="@+id/EquipmentHistory"
+				android:layout_width="fill_parent"
+				android:layout_height="65px"
+				android:text="Equipment\nHistory"
+				android:layout_marginTop="100px"
+				android:layout_marginLeft="5px"
+				android:layout_marginRight="5px"
+				style="@style/button_small"
+				android:layout_weight="0" />
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="65px"
+				android:text="Copy\nEquipment"
+				android:layout_marginLeft="2px"
+				android:layout_marginRight="2px"
+				android:layout_marginBottom="10px"
+				android:gravity="center"
+				android:padding="10px"
+				style="@style/button_small"
+				android:layout_weight="0"
+				android:visibility="gone" />
+        </LinearLayout>
+        
+        <!-- Set the width to anything > 0dip. Having 0dip causes the copy-paste action bar to crash the app -->
+        <LinearLayout
+        	android:layout_width="1dip"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:orientation="vertical" >
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"
+	            android:background="@drawable/sidebar_bg" />
+	        <LinearLayout
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="horizontal"
+	        	style="@style/header"
+	        	android:layout_weight="0" >
+	        	<TextView
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="match_parent"
+	        		android:text="Current Site: "
+	        		style="@style/sub1"
+	        		android:layout_weight="0" />
+	        	<TextView
+					android:id="@+id/SiteName"
+					android:layout_height="match_parent"
+					android:layout_width="0dp"
+					android:text=""
+					style="@style/sub1" />
+	        	<TextView
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="match_parent"
+	        		android:text="Equipment: "
+	        		style="@style/sub1"
+	        		android:layout_weight="0" />
+	        	<TextView
+					android:id="@+id/EquipmentDetail"
+					android:layout_height="match_parent"
+					android:layout_width="0dp"
+					android:text=""
+					style="@style/sub1" />
+	        </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+</TabHost>

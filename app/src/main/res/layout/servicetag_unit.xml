@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		style="@style/table"
+		android:paddingBottom="10dp"
+		android:focusable="true" 
+        android:focusableInTouchMode="true" >
+
+		<LinearLayout
+			android:id="@+id/dummy_focus"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:layout_width="0dp"
+			android:orientation="horizontal"
+			android:layout_height="0dp"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Serviced Unit"
+			android:padding="5dp"
+			android:layout_margin="3dp"
+			style="@style/header_tab"
+			android:layout_weight="0"/>
+
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:text="equipment category:"
+					style="@style/sub1_large"
+					android:layout_gravity="center_vertical"/>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_weight="2">
+					
+					<RelativeLayout
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:visibility="gone">
+						<Spinner
+							android:id="@+id/UnitNo2"
+							android:layout_height="fill_parent"
+							android:layout_width="350dp"
+							style="@style/header_edit_noweight"
+							android:paddingRight="25dp"/>
+
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_alignRight="@id/UnitNo2"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:src="@drawable/drop_arrow"/>
+					</RelativeLayout>
+					
+					<RelativeLayout
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content">
+						<Button
+							android:id="@+id/UnitSpinner2"
+							android:layout_height="fill_parent"
+							android:layout_width="350dp"
+							style="@style/header_edit_noweight"
+							android:paddingRight="25dp"/>
+
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_alignRight="@id/UnitSpinner2"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:src="@drawable/drop_arrow"/>
+						
+					</RelativeLayout>
+					
+					
+				</LinearLayout>
+				
+
+			</TableRow>
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginTop="3dp">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:text="Unit:"
+					style="@style/sub1_large"
+					android:layout_gravity="center_vertical"/>
+				
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_weight="2">
+					
+					<RelativeLayout
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content"
+						android:visibility="gone">
+						<Spinner
+							android:id="@+id/UnitNo"
+							android:layout_height="fill_parent"
+							android:layout_width="350dp"
+							style="@style/header_edit_noweight"
+							android:paddingRight="25dp"/>
+
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_alignRight="@id/UnitNo"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:src="@drawable/drop_arrow"/>
+					</RelativeLayout>
+					
+					<RelativeLayout
+						android:layout_height="fill_parent"
+						android:layout_width="wrap_content">
+						<Button
+							android:id="@+id/UnitSpinner"
+							android:layout_height="fill_parent"
+							android:layout_width="350dp"
+							style="@style/header_edit_noweight"
+							android:paddingRight="25dp"/>
+
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_alignRight="@id/UnitSpinner"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:src="@drawable/drop_arrow"/>
+					</RelativeLayout>
+					
+					<LinearLayout
+						android:id="@+id/ScannerLookup"
+						android:layout_width="wrap_content"
+						android:layout_height="45dp"
+						android:orientation="horizontal"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="5dp"
+						style="@style/button_small"
+						android:layout_weight="0">
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/icon_scanner"
+							android:layout_gravity="center_vertical"/>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:text="Scan Lookup"
+							style="@style/sub1"
+							android:padding="5dp"
+							android:layout_margin="2dp"/>
+						
+						
+					</LinearLayout>
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginTop="3dp">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="45dp"
+					android:text="Service Performed:"
+					style="@style/sub1_large"/>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal"
+					android:layout_weight="2"
+					android:gravity="right">
+					<RelativeLayout
+						android:layout_height="fill_parent"
+						android:layout_width="400dp"
+						android:layout_marginRight="10dp">
+						<Spinner
+							android:id="@+id/PredefinedServices"
+							android:layout_height="fill_parent"
+							android:layout_width="fill_parent"
+							style="@style/header_edit_noweight"/>
+
+						<ImageView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="5dp"
+							android:src="@drawable/drop_arrow"/>
+					</RelativeLayout>
+				</LinearLayout>
+
+			</TableRow>
+
+
+		</TableLayout>
+
+
+		<EditText
+			android:id="@+id/ServicesPerformed"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="services performed"
+			android:gravity="top|left"
+			android:lines="4"
+			android:maxLength="5000"
+			android:layout_marginLeft="35dp"
+			android:layout_marginRight="35dp"
+			android:layout_marginBottom="15dp"
+			android:layout_marginTop="3dp"
+			style="@style/sub1_edit"
+			android:inputType="textMultiLine"
+			android:layout_weight="0"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="45dp"
+			android:text="Comment &amp; Follow-up:"
+			style="@style/sub1_large"
+			android:layout_weight="0"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginBottom="3dp"
+			android:layout_marginTop="3dp"/>
+
+		<EditText
+			android:id="@+id/Comments"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="comments"
+			android:gravity="top|left"
+			android:lines="4"
+			android:maxLength="5000"
+			android:inputType="textMultiLine"
+			android:layout_marginLeft="35dp"
+			android:layout_marginRight="35dp"
+			android:layout_marginBottom="3dp"
+			android:layout_marginTop="3dp"
+			style="@style/sub1_edit"
+			android:layout_weight="0"/>
+	</LinearLayout>
+</ScrollView>

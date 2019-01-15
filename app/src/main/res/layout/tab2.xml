@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dummy_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3px"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/header_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:padding="10px"
+            android:text="Open Tags" />
+
+        <LinearLayout
+            android:id="@+id/NewOpenTag"
+            style="@style/clickableBG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:padding="10px"
+                android:src="@drawable/plus" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:padding="5px"
+                android:text="Create Open Tag" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/NewForm"
+            style="@style/clickableBG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:padding="10px"
+                android:src="@drawable/plus" />
+
+            <TextView
+                style="@style/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:padding="5px"
+                android:text="Create Form" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/WorkFlowTable"
+        style="@style/table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3px" >
+
+        <TableRow >
+            <TextView
+                android:id="@+id/Sort_TagNo"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="0.45"
+                android:padding="10px"
+                android:text="Tag No " />
+
+            <TextView
+                android:id="@+id/Sort_SiteName"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:padding="10px"
+                android:text="Site Name" />
+
+            <TextView
+                android:id="@+id/Sort_Tenant"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="0.6"
+                android:padding="10px"
+                android:text="Tenant" />
+
+            <TextView
+                android:id="@+id/Sort_BatchNo"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="0.6"
+                android:padding="10px"
+                android:text="Batch No" />
+
+            <TextView
+                android:id="@+id/Sort_JobNo"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="0.4"
+                android:padding="10px"
+                android:text="Job No" />
+
+            <TextView
+                android:id="@+id/Sort_Description"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:padding="10px"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/Sort_Completed"
+                style="@style/header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="0.6"
+                android:padding="10px"
+                android:text="Submit" />
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/TagBuild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </TableLayout>
+
+</LinearLayout>

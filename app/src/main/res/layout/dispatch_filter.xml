@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    style="@style/table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp" >
+	
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Dispatches"
+        style="@style/header_Xlarge"
+        android:layout_weight="0" />
+    
+    <LinearLayout
+        android:id="@+id/LL_Main"
+        android:layout_below="@id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <!-- Left Section -->
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_margin="5dp"
+	        style="@style/table_light"
+	        android:layout_weight=".8" >
+	        <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Call Status:"
+		        style="@style/header_large"
+		        android:layout_weight="0" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+		        <Button
+		            android:id="@+id/Button_AllCall"
+			        android:layout_width="50dp"
+			        android:layout_height="35dp"
+			        android:text="ALL"
+			        style="@style/button_small"
+			        android:layout_weight="0"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginTop="10dp" />
+		        <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0"
+			        android:orientation="vertical" >
+			        
+			        <!-- No Tags Submited Checkbox -->
+
+			        <LinearLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal" >
+
+			            <CheckBox
+			                android:id="@+id/CheckBox_NoTags"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" />
+			            <TextView
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="No Tags Submitted"
+					        style="@style/sub2_value"
+					        android:layout_gravity="center_vertical"
+					        android:layout_weight="0" />
+			        </LinearLayout>
+			        
+			        <!-- Must Return Checkbox -->
+			        <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal" >
+			            <CheckBox
+			                android:id="@+id/CheckBox_MustReturn"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" />
+			            <TextView
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="Must Return"
+					        style="@style/sub2_value"
+					        android:layout_gravity="center_vertical"
+					        android:layout_weight="0" />
+			        </LinearLayout>
+			        
+			        <!-- Call Complete Checkbox -->
+			        <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal" >
+			            <CheckBox
+			                android:id="@+id/CheckBox_CallComplete"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" />
+			            <TextView
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="Call Complete"
+					        style="@style/sub2_value"
+					        android:layout_gravity="center_vertical"
+					        android:layout_weight="0" />
+			        </LinearLayout>
+			        
+		        </LinearLayout>
+	        </LinearLayout>
+    	</LinearLayout>
+    	
+        <!-- Right Section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            style="@style/table_light"
+            android:layout_weight="1.9" >
+            
+            <!-- Filter Mechanic 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp" >
+                <CheckBox
+                    android:id="@+id/CheckBox_Mechanic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+	                android:layout_width="80dp"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	                <TextView
+	                    style="@style/sub2_value"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_weight="0"
+	                    android:text="Filter " />
+	                <TextView
+	                    style="@style/sub2_value"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_weight="0"
+	                    android:text="Mech 1 " />
+	                <Button
+	                    android:id="@+id/Button_AddMechanic1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="Add Mech"
+				        style="@style/button_small"
+				        android:layout_weight="0"
+				        android:layout_marginLeft="5dp"
+				        android:layout_marginTop="5dp" />
+	            </LinearLayout>
+
+	            <ScrollView
+	                style="@style/header"
+	                android:layout_width="0dp"
+	                android:layout_height="150dp"
+	                android:layout_weight="1" >
+
+		            <LinearLayout
+		                android:id="@+id/ListView_Mechanic1"
+		                android:layout_width="match_parent"
+		            	android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="10dp"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+	            </ScrollView>
+            </LinearLayout>
+            
+            <!-- Filter Mechanic 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp" >
+                <CheckBox
+                    android:id="@+id/CheckBox_Mechanic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+	                <TextView
+	                    style="@style/sub1_value"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_weight="0"
+	                    android:text="Filter" />
+	                <TextView
+	                    style="@style/sub2_value"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:layout_weight="0"
+	                    android:text="Mech 2" />
+	                
+	                
+	                <Button
+	                    android:id="@+id/Button_AddMechanic2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="Add Mech"
+				        style="@style/button_small"
+				        android:layout_weight="0"
+				        android:layout_marginLeft="0dp"
+				        android:layout_marginTop="5dp" />
+	                </LinearLayout>
+	            <ScrollView
+	                android:layout_width="0dp"
+		            android:layout_height="150dp"
+		            style="@style/header"
+		            android:layout_weight="1" >
+		            <LinearLayout
+		                android:id="@+id/ListView_Mechanic2"
+		                android:layout_width="match_parent"
+		            	android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginRight="10dp"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+	            </ScrollView>
+            </LinearLayout>
+            
+        </LinearLayout>
+    	
+    </LinearLayout>
+    
+    <Button
+		android:id="@+id/Button_Apply"
+		android:layout_below="@id/LL_Main"
+		android:layout_toRightOf="@id/Button_Apply"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="55dp"
+		android:layout_marginLeft="20dp"
+		android:text="Apply"
+		style="@style/button_2"
+		android:layout_weight="0" />
+    
+    <Button
+		android:id="@+id/Button_Cancel"
+		android:layout_below="@id/LL_Main"
+		android:layout_toRightOf="@id/Button_Apply"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="55dp"
+		android:layout_marginLeft="20dp"
+		android:text="Cancel"
+		style="@style/button_2"
+		android:layout_weight="0" />
+    
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	
+	<LinearLayout
+		android:id="@+id/dummy_focus"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="0px"
+	    android:orientation="horizontal"
+	    android:layout_height="0px" />
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		style="@style/header"
+		android:layout_weight="0" >
+		<TextView
+			android:id="@+id/title"
+			android:text="Blue"
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        style="@style/header_Xlarge" />
+	    
+	    <LinearLayout
+	    	android:id="@+id/AddBlueUnit"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+		    <ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10px"
+				android:src="@drawable/plus"
+				android:background="#00000000"
+				android:onClick="addBlue"
+				android:layout_gravity="center_vertical" />
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Add Unit"
+			  	style="@style/sub1"
+			   	android:layout_weight="1"
+			   	android:padding="5px"
+			   	android:layout_margin="2px" />
+	    </LinearLayout>
+	</LinearLayout>
+
+		
+			<ScrollView
+				android:id="@+id/ScrollView01"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="#00000000">
+					<LinearLayout
+						android:id="@+id/TableHost_Blue"
+						android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					    android:background="#00000000"
+					    android:focusable="true" 
+        				android:focusableInTouchMode="true">
+				    </LinearLayout>
+			</ScrollView>
+			
+	
+</LinearLayout>

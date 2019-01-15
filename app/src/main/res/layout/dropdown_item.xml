@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="@drawable/clickable_bg"
+    android:layout_margin="2px" >
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/sub1_large"
+        android:layout_margin="5px"
+        android:padding="3px" />
+    <TextView
+        android:id="@+id/Separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/sub1_large"
+        android:layout_weight="0"
+        android:layout_margin="5px"
+        android:padding="3px"
+        android:text=" - " />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/sub1_large"
+        android:layout_margin="5px"
+        android:padding="3px" />
+</LinearLayout>

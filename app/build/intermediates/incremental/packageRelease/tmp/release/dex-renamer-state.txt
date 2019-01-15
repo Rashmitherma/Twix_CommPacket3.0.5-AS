@@ -1,0 +1,4 @@
+#Thu Jan 10 14:48:46 PST 2019
+base.0=C\:\\Twix_CommPacket11\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

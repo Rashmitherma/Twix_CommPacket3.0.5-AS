@@ -1,0 +1,44 @@
+<themes>
+	<therma>
+		<tableBG>0xff9999cc</tableBG>
+		<headerText>0xFFFFFFFF</headerText>
+		<headerValue>0xff000055</headerValue>
+		<headerSize>20</headerSize>
+		<headerSizeLarge>25</headerSizeLarge>
+		<headerBG>0xFFAAAADD</headerBG>
+		<sub1Header>0xFFFFFFFF</sub1Header>
+		<sub1Value>0xff000055</sub1Value>
+		<sub1BG>0x00000000</sub1BG>
+		<sub2BG>0xFFCCCCFF</sub2BG>
+		<subSize>20</subSize>
+		<editBG>0xffddddff</editBG>
+		<lineColor>0xff555588</lineColor>
+		<sortDesc>0xFF555588</sortDesc>
+		<sortAsc>0xFF9999CC</sortAsc>
+		<sortNone>0xFF7777AA</sortNone>
+		<warnColor>0xffff0000</warnColor>
+		<warnColorLight>0xffffaaaa</warnColorLight>
+	</therma>
+	
+	<highcontrast>
+		<tableBG>0xFFFFFFFF</tableBG>
+		<headerText>0xFFFFFFFF</headerText>
+		<headerValue>0xFF000000</headerValue>
+		<headerSize>20</headerSize>
+		<headerSizeLarge>25</headerSizeLarge>
+		<headerBG>0xFFFFFFFF</headerBG>
+		<sub1Header>0xFFFFFFFF</sub1Header>
+		<sub1Value>0xFFFFFFFF</sub1Value>
+		<sub1BG>0xFFFFFFFF</sub1BG>
+		<sub2BG>0xFFFFFFFF</sub2BG>
+		<subSize>20</subSize>
+		<editBG>0xFFFFFFFF</editBG>
+		<lineColor>0xFFFFFFFF</lineColor>
+		<sortDesc>0xFFFFFFFF</sortDesc>
+		<sortAsc>0xFFFFFFFF</sortAsc>
+		<sortNone>0xFFFFFFFF</sortNone>
+		<warnColor>0xFFFFFFFF</warnColor>
+		<warnColorLight>0xFFFFFFFF</warnColorLight>
+	</highcontrast>
+	
+</themes>

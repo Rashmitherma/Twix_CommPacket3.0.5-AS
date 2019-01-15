@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dummy_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Sites\nLoaded" />
+
+        <TextView
+            android:id="@+id/Title_Sub"
+            style="@style/header_Xlarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:text="Service Address Lookup" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/Search_Form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/Form_SiteName"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Site Name:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Input_SiteName"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:hint="site name"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#FF000000" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/Form_Address"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Address:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Input_Address"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:hint="address"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#FF000000" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/Form_City"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="City:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Input_City"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:hint="city"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#FF000000" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/Form_BuildingNo"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="BuildingNo:" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Input_BuildingNo"
+                style="@style/sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:hint="building number"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#FF000000" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Warning"
+            style="@style/warning"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:layout_weight="0"
+            android:text="Warning: Only 20 results will be displayed. Please narrow your search"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/submit_search"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="search"
+            android:padding="10dp"
+            android:text="Search" >
+        </Button>
+
+        <Button
+            android:id="@id/submit_search"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="255px"
+            android:onClick="download"
+            android:padding="10dp"
+            android:text="Download" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SearchHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="0.5"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/Sort_SiteName"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="2"
+            android:text="Site Name" />
+
+        <TextView
+            android:id="@+id/Sort_Address"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="2"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/Sort_City"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="1.5"
+            android:text="City" />
+
+        <TextView
+            android:id="@+id/Sort_State"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="0.5"
+            android:text="State" />
+
+        <TextView
+            android:id="@+id/Sort_Zip"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:text="Zip" />
+
+        <TextView
+            android:id="@+id/Sort_BuildingNo"
+            style="@style/header"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:text="BuildingNo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/Search_Results"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

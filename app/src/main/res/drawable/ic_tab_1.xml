@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use grey     android:drawable="@drawable/test_button2" -->
+    <item 
+          android:state_selected="true" >
+    </item>
+    <item>
+    <!-- When not selected, use white      android:drawable="@drawable/test_button"-->
+    </item >
+</selector>

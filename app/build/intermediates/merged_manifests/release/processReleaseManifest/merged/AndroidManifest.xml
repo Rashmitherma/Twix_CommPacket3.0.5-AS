@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twix_agent"
+    android:versionCode="2"
+    android:versionName="2.0.7" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="26" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:name="com.twix_agent.Twix_Application"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.twix_agent.Twix_AgentTabActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentTab1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentActivityGroup1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentActivityGroup2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.filechooser"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.photopicker"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.FileexplorerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Item"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentActivityGroup3"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentAddAttachments"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEmailAttachments"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSiteSearch"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_Agentjobdocs"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentAddEmail"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSiteSummary"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentContacts"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentTab2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentTab3"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentOpenTagsTabHost"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentOpenTag"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.webview"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.WebLinks"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentOpenTagSiteDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentOpenTagReceipt"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSyncPage"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSearch"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPMTabHost"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab0"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab3"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab4"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab5"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab6"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Tab7"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Parts_Materials"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentPM_Labor"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSignature"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentBlue"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSafetyChecklist"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitTabHost"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceTagUnit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitLabor"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitMaterial"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitRefrigerant"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitPhoto"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentServiceUnitPMChecklist"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSiteHistory_Tags"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentSiteHistory_TagDetail"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipmentTabHost"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipmentTabHost_Edit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipment"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipmentDetail"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipmentDetail_Edit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentFans"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentFans_Edit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentFilters"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentFilters_Edit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentRefCircuits"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentRefCircuits_Edit"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.twix_agent.Twix_AgentEquipmentOld"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>

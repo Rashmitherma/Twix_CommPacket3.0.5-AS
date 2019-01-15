@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ff555588"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+	
+ <EditText
+            android:id="@+id/et_address_id"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/et_address_id"
+            android:layout_centerHorizontal="true"
+            android:background="#ff9999cc"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textSize = "20sp"
+            android:hint="Email Address" >
+            <requestFocus />
+            </EditText>
+	 <Button
+            android:id="@+id/bt_add_email"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+          android:background = "#ff222255"
+          android:textSize = "40sp"
+            android:layout_alignLeft="@+id/et_subject_id"
+            android:layout_below="@+id/et_subject_id"
+            android:textColor="#FFFFFFFF"
+            android:text="Choose Email Address" />
+
+	 <EditText
+	     android:id="@+id/et_subject_id"
+	     android:layout_width="fill_parent"
+	     android:layout_height="70dp"
+	     android:layout_marginTop="15dp"
+	     android:ems="10"
+	     android:textSize = "20sp"
+	     android:background="#ff9999cc"
+	     android:hint="Subject" >
+	     <requestFocus />
+	     </EditText>
+
+				 <Button
+            android:id="@+id/bt_attach_id"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/et_subject_id"
+            android:background = "#ff222255"
+            android:textColor="#FFFFFFFF"
+            android:textSize = "40sp"
+            android:layout_below="@+id/et_subject_id"
+            android:text="Add Attachment" />
+<EditText
+            android:id="@+id/tv_attach_id"
+            android:layout_width="wrap_content"
+            android:background="#ff555588"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/bt_attach_id"
+            android:layout_alignBottom="@+id/bt_attach_id"
+            android:layout_toRightOf="@+id/bt_attach_id"
+          android:textSize = "15sp"
+            android:text=""
+             />
+				<EditText
+				     android:id="@+id/tv_attach2_id"
+				     android:layout_width="wrap_content"
+            android:layout_height="30dp"
+           android:background="#ff555588"
+            android:layout_alignBaseline="@+id/bt_attach_id"
+            android:layout_alignBottom="@+id/bt_attach_id"
+            android:layout_toRightOf="@+id/bt_attach_id"
+     android:textSize = "15sp"
+            android:text=""
+            />
+				 <EditText
+				     android:id="@+id/tv_attach3_id"
+				    android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#ff555588"
+            android:layout_alignBaseline="@+id/bt_attach_id"
+            android:layout_alignBottom="@+id/bt_attach_id"
+            android:layout_toRightOf="@+id/bt_attach_id"
+             android:textSize = "15sp"
+            android:text=""
+             />
+				 <EditText
+				     android:id="@+id/tv_attach4_id"
+				    android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#ff555588"
+            android:layout_alignBaseline="@+id/bt_attach_id"
+            android:layout_alignBottom="@+id/bt_attach_id"
+            android:layout_toRightOf="@+id/bt_attach_id"
+             android:textSize = "15sp"
+            android:text=""
+             />
+				 <EditText
+				     android:id="@+id/tv_attach5_id"
+				    android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#ff555588"
+            android:layout_alignBaseline="@+id/bt_attach_id"
+            android:layout_alignBottom="@+id/bt_attach_id"
+            android:layout_toRightOf="@+id/bt_attach_id"
+             android:textSize = "15sp"
+            android:text=""
+             />
+
+				 <EditText
+				     android:id="@+id/et_message_id"
+				     android:layout_width="fill_parent"
+				     android:layout_height="200dp"
+				     android:layout_marginTop="10dp"
+				     android:ems="10"
+				     android:background="#ff9999cc"
+				     android:hint="Message"
+				      android:textSize = "20sp"
+				     android:inputType="textMultiLine" >
+					
+				     
+				 </EditText>
+
+				 
+				  <Button
+				     android:id="@+id/bt_send_id"
+				     android:layout_width="fill_parent"
+				     android:layout_height="55dp"
+				     android:layout_marginTop="2dp"
+				     android:textColor="#FFFFFFFF"
+				      android:textSize = "35sp"
+				     android:background = "#ff222255"
+				     android:text="SEND" />
+				 
+				 
+				  
+			</LinearLayout>
+
+	

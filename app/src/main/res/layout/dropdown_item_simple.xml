@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/text1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	style="@style/sub1_large"
+	android:layout_weight="0"
+	android:layout_margin="2px"
+	android:background="@drawable/clickable_bg"
+	android:padding="3px" />

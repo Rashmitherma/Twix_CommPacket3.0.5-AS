@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/table"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ScrollView
+	    android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" >
+		<LinearLayout
+		    android:id="@+id/MechHost"
+		    style="@style/table"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="5px"
+		    android:orientation="vertical">
+		</LinearLayout>
+	</ScrollView>
+	
+	<Button
+	    android:id="@+id/Cancel"
+	    style="@style/button"
+	    android:layout_width="145px"
+	    android:layout_height="65px"
+	    android:text="Cancel"
+	    android:layout_weight="0"
+	    android:layout_gravity="center" />    
+	
+</LinearLayout>
